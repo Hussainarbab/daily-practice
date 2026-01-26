@@ -3,28 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css">
-   
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-  
-<nav id="navbar">
+    <nav id="navbar" class="navbar">
+      <div class="navbar-container">
+        <h1 class="logo">Portfolio</h1>
+        
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-  <h1> Portfolio</h1>
+        <div class="auth-buttons">
+          <button class="btn btn1">Signup</button>
+          <button class="btn btn2">Sign in</button>
+        </div>
+      </div>
+    </nav>
 
-  <ul>
-    <li>Home</li>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
-  </ul>
- <div>
-   <button class="btn1">Signup</button>
-  <button class="btn2">Sign in</button>
- </div>
-</nav>
-
-
+    <script src="./script.js"></script>
   </body>
 </html>
