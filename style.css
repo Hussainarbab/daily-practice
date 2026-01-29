@@ -151,7 +151,7 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(135deg, #4682B4 0%, #36648B 100%);
+    background: linear-gradient(rgba(70, 130, 180, 0.7), rgba(54, 100, 139, 0.7)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=900&fit=crop') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
