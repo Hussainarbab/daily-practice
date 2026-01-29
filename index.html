@@ -1,116 +1,435 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilgit-Baltistan | Premium Travel & Adventure Tours</title>
     <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Navigation Bar -->
     <nav id="navbar" class="navbar">
-      <div class="navbar-container">
-        <h1 class="logo">Portfolio</h1>
-        
-        <button class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-
-        <div class="auth-buttons">
-          <button class="btn btn1">Signup</button>
-          <button class="btn btn2">Sign in</button>
+        <div class="navbar-container">
+            <div class="logo">🏔️ Gilgit-Baltistan Tours</div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#features" class="nav-link">Why Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#booking" class="nav-link">Book Now</a></li>
+            </ul>
+            <button class="btn btn-primary" onclick="scrollToSection('booking')">Book Trip</button>
         </div>
-      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">Welcome to My Portfolio</h1>
-        <p class="hero-subtitle">Creating amazing digital experiences with modern web technologies</p>
-        <button class="btn btn-primary">Get Started</button>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <p>I'm a passionate web developer dedicated to building beautiful, functional, and user-friendly websites. With expertise in modern web technologies, I help businesses bring their visions to life.</p>
-          <div class="skills">
-            <div class="skill-item">
-              <h3>Web Design</h3>
-              <p>Creating stunning and responsive designs</p>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the Paradise of Gilgit-Baltistan</h1>
+            <p class="hero-subtitle">Experience breathtaking mountains, pristine valleys, and unforgettable adventures</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('packages')">Explore Packages</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('destinations')">View Destinations</button>
             </div>
-            <div class="skill-item">
-              <h3>Development</h3>
-              <p>Building robust and scalable applications</p>
-            </div>
-            <div class="skill-item">
-              <h3>Optimization</h3>
-              <p>Ensuring fast and efficient performance</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-            <h3>Project One</h3>
-            <p>A modern web application built with cutting-edge technologies</p>
-            <a href="#" class="project-link">View Project →</a>
-          </div>
-          <div class="project-card">
-            <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-            <h3>Project Two</h3>
-            <p>Responsive design with interactive user experience</p>
-            <a href="#" class="project-link">View Project →</a>
-          </div>
-          <div class="project-card">
-            <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-            <h3>Project Three</h3>
-            <p>Full-stack application with database integration</p>
-            <a href="#" class="project-link">View Project →</a>
-          </div>
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Featured Destinations</h2>
+            <p class="section-subtitle">Explore the most beautiful locations in Gilgit-Baltistan</p>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 250px;"></div>
+                    <div class="destination-info">
+                        <h3>Hunza Valley</h3>
+                        <p>Stunning valley with majestic mountain views and lush gardens. Perfect for hiking and relaxation.</p>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.8/5)</span>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 250px;"></div>
+                    <div class="destination-info">
+                        <h3>Nanga Parbat Base Camp</h3>
+                        <p>Adventure to the 9th highest peak in the world. Suitable for experienced trekkers and climbers.</p>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.9/5)</span>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 250px;"></div>
+                    <div class="destination-info">
+                        <h3>Deosai Plains</h3>
+                        <p>High altitude meadows with rare wildlife. Best visited during summer for trekking and photography.</p>
+                        <span class="rating">⭐⭐⭐⭐ (4.7/5)</span>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); height: 250px;"></div>
+                    <div class="destination-info">
+                        <h3>Skardu Lake</h3>
+                        <p>Crystal clear alpine lake surrounded by mountains. Ideal for boating, fishing, and photography.</p>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.8/5)</span>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); height: 250px;"></div>
+                    <div class="destination-info">
+                        <h3>Karakoram Highway</h3>
+                        <p>One of the highest paved roads in the world. Stunning mountain scenery and adventure routes.</p>
+                        <span class="rating">⭐⭐⭐⭐ (4.6/5)</span>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); height: 250px;"></div>
+                    <div class="destination-info">
+                        <h3>Fairy Meadows</h3>
+                        <p>Alpine meadow with panoramic Nanga Parbat views. Perfect base camp for trekking adventures.</p>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.9/5)</span>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-text">Let's work together to create something amazing</p>
-        <button class="btn btn-primary">Contact Me</button>
-      </div>
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2 class="section-title">Travel Packages</h2>
+            <p class="section-subtitle">Choose the perfect package for your adventure</p>
+            <div class="packages-grid">
+                <div class="package-card basic">
+                    <div class="package-header">
+                        <h3>Adventure Seeker</h3>
+                        <div class="price">$899<span>/person</span></div>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ 5 Days / 4 Nights</li>
+                        <li>✓ Skardu & Hunza Valley</li>
+                        <li>✓ 3-Star Accommodation</li>
+                        <li>✓ Meals Included</li>
+                        <li>✓ Daily Guided Tours</li>
+                        <li>✓ Photography Spots</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="bookPackage('Adventure Seeker')">Book Now</button>
+                </div>
+
+                <div class="package-card premium">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="package-header">
+                        <h3>Premium Explorer</h3>
+                        <div class="price">$1,499<span>/person</span></div>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ 7 Days / 6 Nights</li>
+                        <li>✓ All Major Destinations</li>
+                        <li>✓ 4-Star Accommodation</li>
+                        <li>✓ All Meals Included</li>
+                        <li>✓ Expert Mountain Guides</li>
+                        <li>✓ Helicopter Optional</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="bookPackage('Premium Explorer')">Book Now</button>
+                </div>
+
+                <div class="package-card luxury">
+                    <div class="package-header">
+                        <h3>Luxury Expedition</h3>
+                        <div class="price">$2,299<span>/person</span></div>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ 10 Days / 9 Nights</li>
+                        <li>✓ Exclusive Experiences</li>
+                        <li>✓ 5-Star Resorts</li>
+                        <li>✓ Gourmet Dining</li>
+                        <li>✓ Private Guides</li>
+                        <li>✓ Helicopter Tours</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="bookPackage('Luxury Expedition')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Expert Guides</h3>
+                    <p>Experienced local guides with deep knowledge of mountains and culture</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏨</div>
+                    <h3>Premium Stays</h3>
+                    <p>Carefully selected hotels and resorts with excellent amenities</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safety First</h3>
+                    <p>Comprehensive insurance and emergency protocols for all activities</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📅</div>
+                    <h3>Flexible Dates</h3>
+                    <p>Custom packages available year-round with flexible scheduling</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive rates with transparent pricing and no hidden charges</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support throughout your journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Travelers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"An absolutely incredible experience! The guides were knowledgeable, the hotels were comfortable, and the views were breathtaking. Highly recommended!"</p>
+                    <p class="testimonial-author">- Sarah Johnson, USA</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best trip ever! The Hunza Valley package exceeded all expectations. Gilgit-Baltistan is truly a hidden gem. Will definitely come back!"</p>
+                    <p class="testimonial-author">- Ahmed Khan, UAE</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Professional service, amazing food, and unforgettable memories. The team took care of everything. Worth every penny!"</p>
+                    <p class="testimonial-author">- Emma Smith, UK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Plan Your Adventure</h2>
+            <div class="booking-form-container">
+                <form class="booking-form" onsubmit="handleBooking(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Destination *</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Select a destination</option>
+                                <option value="hunza">Hunza Valley</option>
+                                <option value="nanga">Nanga Parbat Base Camp</option>
+                                <option value="deosai">Deosai Plains</option>
+                                <option value="skardu">Skardu Lake</option>
+                                <option value="karakoram">Karakoram Highway</option>
+                                <option value="fairy">Fairy Meadows</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="package">Package *</label>
+                            <select id="package" name="package" required>
+                                <option value="">Select a package</option>
+                                <option value="adventure">Adventure Seeker - $899</option>
+                                <option value="premium">Premium Explorer - $1,499</option>
+                                <option value="luxury">Luxury Expedition - $2,299</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers *</label>
+                            <input type="number" id="travelers" name="travelers" min="1" max="20" value="1" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Requests</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any special requirements or questions?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Complete Booking</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
-        <div class="social-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Twitter</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Your trusted partner in discovering the beauty of Gilgit-Baltistan. Creating unforgettable travel experiences since 2015.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#features">Why Us</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@gilgittours.com</p>
+                    <p>📞 +92 1234 567890</p>
+                    <p>📍 Skardu, Gilgit-Baltistan</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gilgit-Baltistan Tours. All rights reserved.</p>
+            </div>
         </div>
-      </div>
     </footer>
 
-    <script src="./script.js"></script>
-  </body>
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(70, 130, 180, 0.95)';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, #4682B4 0%, #36648B 100%)';
+            }
+        });
+
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Book package function
+        function bookPackage(packageName) {
+            const packageSelect = document.getElementById('package');
+            if (packageName === 'Adventure Seeker') {
+                packageSelect.value = 'adventure';
+            } else if (packageName === 'Premium Explorer') {
+                packageSelect.value = 'premium';
+            } else if (packageName === 'Luxury Expedition') {
+                packageSelect.value = 'luxury';
+            }
+            scrollToSection('booking');
+        }
+
+        // Form submission
+        function handleBooking(event) {
+            event.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                destination: document.getElementById('destination').value,
+                package: document.getElementById('package').value,
+                date: document.getElementById('date').value,
+                travelers: document.getElementById('travelers').value,
+                message: document.getElementById('message').value
+            };
+            
+            console.log('Booking Details:', formData);
+            alert(`Thank you, ${formData.name}! We'll contact you at ${formData.email} to confirm your booking.`);
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.destination-card, .package-card, .feature-item, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
 </html>
