@@ -19,9 +19,9 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // Navbar background on scroll
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(70, 130, 180, 0.95)';
+        navbar.style.background = 'rgba(102, 126, 234, 0.95)';
     } else {
-        navbar.style.background = 'linear-gradient(135deg, #4682B4 0%, #36648B 100%)';
+        navbar.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
     }
 });
 
