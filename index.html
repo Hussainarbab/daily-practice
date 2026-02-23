@@ -1,343 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gilgit-Baltistan | Premium Travel & Adventure Tours</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar">
-        <div class="navbar-container">
-            <div class="logo">🏔️ Gilgit-Baltistan Tours</div>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#destinations" class="nav-link">Destinations</a></li>
-                <li><a href="#packages" class="nav-link">Packages</a></li>
-                <li><a href="#features" class="nav-link">Why Us</a></li>
-                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#booking" class="nav-link">Book Now</a></li>
-            </ul>
-            <button class="btn btn-primary" onclick="scrollToSection('booking')">Book Trip</button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Discover the Paradise of Gilgit-Baltistan</h1>
-            <p class="hero-subtitle">Experience breathtaking mountains, pristine valleys, and unforgettable adventures</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="scrollToSection('packages')">Explore Packages</button>
-                <button class="btn btn-secondary" onclick="scrollToSection('destinations')">View Destinations</button>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="ArbabXada Etitx — a lightweight, fast video editor landing page demo" />
+        <title>ArbabXada Etitx — Video Editor</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <nav id="navbar" class="navbar">
+            <div class="navbar-container container">
+                <div class="logo">ArbabXada <span class="brand-accent">Etitx</span></div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#demo">Demo</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a class="btn btn-primary" href="#demo">Try Demo</a>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Destinations Section -->
-    <section id="destinations" class="destinations">
-        <div class="container">
-            <h2 class="section-title">Featured Destinations</h2>
-            <p class="section-subtitle">Explore the most beautiful locations in Gilgit-Baltistan</p>
-            <div class="destinations-grid">
-                <div class="destination-card">
-                    <div class="destination-image" style="background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop') center/cover no-repeat;"></div>
-                    <div class="destination-info">
-                        <h3>Hunza Valley</h3>
-                        <p>Stunning valley with majestic mountain views and lush gardens. Perfect for hiking and relaxation.</p>
-                        <span class="rating">⭐⭐⭐⭐⭐ (4.8/5)</span>
-                        <a href="#" class="learn-more">Learn More →</a>
+        <header id="home" class="hero hero-small">
+            <div class="container hero-inner">
+                <div class="hero-left">
+                    <h1 class="hero-title">Edit faster. Create bolder.</h1>
+                    <p class="hero-subtitle">ArbabXada Etitx — a lightweight web video editor demo for quick trims, previews, and exports.</p>
+                    <div class="hero-ctas">
+                        <a class="btn btn-primary" href="#demo">Try Demo</a>
+                        <a class="btn btn-secondary" href="#features">Learn More</a>
                     </div>
                 </div>
-
-                <div class="destination-card">
-                    <div class="destination-image" style="background: url('https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600&h=400&fit=crop') center/cover no-repeat;"></div>
-                    <div class="destination-info">
-                        <h3>Nanga Parbat Base Camp</h3>
-                        <p>Adventure to the 9th highest peak in the world. Suitable for experienced trekkers and climbers.</p>
-                        <span class="rating">⭐⭐⭐⭐⭐ (4.9/5)</span>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="destination-card">
-                    <div class="destination-image" style="background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop') center/cover no-repeat;"></div>
-                    <div class="destination-info">
-                        <h3>Deosai Plains</h3>
-                        <p>High altitude meadows with rare wildlife. Best visited during summer for trekking and photography.</p>
-                        <span class="rating">⭐⭐⭐⭐ (4.7/5)</span>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="destination-card">
-                    <div class="destination-image" style="background: url('https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&h=400&fit=crop') center/cover no-repeat;"></div>
-                    <div class="destination-info">
-                        <h3>Skardu Lake</h3>
-                        <p>Crystal clear alpine lake surrounded by mountains. Ideal for boating, fishing, and photography.</p>
-                        <span class="rating">⭐⭐⭐⭐⭐ (4.8/5)</span>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="destination-card">
-                    <div class="destination-image" style="background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop') center/cover no-repeat;"></div>
-                    <div class="destination-info">
-                        <h3>Karakoram Highway</h3>
-                        <p>One of the highest paved roads in the world. Stunning mountain scenery and adventure routes.</p>
-                        <span class="rating">⭐⭐⭐⭐ (4.6/5)</span>
-                        <a href="#" class="learn-more">Learn More →</a>
-                    </div>
-                </div>
-
-                <div class="destination-card">
-                    <div class="destination-image" style="background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop') center/cover no-repeat;"></div>
-                    <div class="destination-info">
-                        <h3>Fairy Meadows</h3>
-                        <p>Alpine meadow with panoramic Nanga Parbat views. Perfect base camp for trekking adventures.</p>
-                        <span class="rating">⭐⭐⭐⭐⭐ (4.9/5)</span>
-                        <a href="#" class="learn-more">Learn More →</a>
+                <div class="hero-right">
+                    <div class="card demo-preview">
+                        <div class="demo-badge">Live Demo</div>
+                        <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?w=800&h=450&fit=crop" alt="video preview" />
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Packages Section -->
-    <section id="packages" class="packages">
-        <div class="container">
-            <h2 class="section-title">Travel Packages</h2>
-            <p class="section-subtitle">Choose the perfect package for your adventure</p>
-            <div class="packages-grid">
-                <div class="package-card basic">
-                    <div class="package-header">
-                        <h3>Adventure Seeker</h3>
-                        <div class="price">$899<span>/person</span></div>
-                    </div>
-                    <ul class="package-features">
-                        <li>✓ 5 Days / 4 Nights</li>
-                        <li>✓ Skardu & Hunza Valley</li>
-                        <li>✓ 3-Star Accommodation</li>
-                        <li>✓ Meals Included</li>
-                        <li>✓ Daily Guided Tours</li>
-                        <li>✓ Photography Spots</li>
-                    </ul>
-                    <button class="btn btn-secondary" onclick="bookPackage('Adventure Seeker')">Book Now</button>
-                </div>
-
-                <div class="package-card premium">
-                    <div class="popular-badge">MOST POPULAR</div>
-                    <div class="package-header">
-                        <h3>Premium Explorer</h3>
-                        <div class="price">$1,499<span>/person</span></div>
-                    </div>
-                    <ul class="package-features">
-                        <li>✓ 7 Days / 6 Nights</li>
-                        <li>✓ All Major Destinations</li>
-                        <li>✓ 4-Star Accommodation</li>
-                        <li>✓ All Meals Included</li>
-                        <li>✓ Expert Mountain Guides</li>
-                        <li>✓ Helicopter Optional</li>
-                    </ul>
-                    <button class="btn btn-primary" onclick="bookPackage('Premium Explorer')">Book Now</button>
-                </div>
-
-                <div class="package-card luxury">
-                    <div class="package-header">
-                        <h3>Luxury Expedition</h3>
-                        <div class="price">$2,299<span>/person</span></div>
-                    </div>
-                    <ul class="package-features">
-                        <li>✓ 10 Days / 9 Nights</li>
-                        <li>✓ Exclusive Experiences</li>
-                        <li>✓ 5-Star Resorts</li>
-                        <li>✓ Gourmet Dining</li>
-                        <li>✓ Private Guides</li>
-                        <li>✓ Helicopter Tours</li>
-                    </ul>
-                    <button class="btn btn-secondary" onclick="bookPackage('Luxury Expedition')">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Why Choose Us?</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">🏆</div>
-                    <h3>Expert Guides</h3>
-                    <p>Experienced local guides with deep knowledge of mountains and culture</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🏨</div>
-                    <h3>Premium Stays</h3>
-                    <p>Carefully selected hotels and resorts with excellent amenities</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Safety First</h3>
-                    <p>Comprehensive insurance and emergency protocols for all activities</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📅</div>
-                    <h3>Flexible Dates</h3>
-                    <p>Custom packages available year-round with flexible scheduling</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">💰</div>
-                    <h3>Best Prices</h3>
-                    <p>Competitive rates with transparent pricing and no hidden charges</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📱</div>
-                    <h3>24/7 Support</h3>
-                    <p>Round-the-clock customer support throughout your journey</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Travelers Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"An absolutely incredible experience! The guides were knowledgeable, the hotels were comfortable, and the views were breathtaking. Highly recommended!"</p>
-                    <p class="testimonial-author">- Sarah Johnson, USA</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Best trip ever! The Hunza Valley package exceeded all expectations. Gilgit-Baltistan is truly a hidden gem. Will definitely come back!"</p>
-                    <p class="testimonial-author">- Ahmed Khan, UAE</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Professional service, amazing food, and unforgettable memories. The team took care of everything. Worth every penny!"</p>
-                    <p class="testimonial-author">- Emma Smith, UK</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Section -->
-    <section id="booking" class="booking">
-        <div class="container">
-            <h2 class="section-title">Plan Your Adventure</h2>
-            <div class="booking-form-container">
-                <form class="booking-form" onsubmit="handleBooking(event)">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="destination">Destination *</label>
-                            <select id="destination" name="destination" required>
-                                <option value="">Select a destination</option>
-                                <option value="hunza">Hunza Valley</option>
-                                <option value="nanga">Nanga Parbat Base Camp</option>
-                                <option value="deosai">Deosai Plains</option>
-                                <option value="skardu">Skardu Lake</option>
-                                <option value="karakoram">Karakoram Highway</option>
-                                <option value="fairy">Fairy Meadows</option>
-                            </select>
+        <main>
+            <section id="features" class="section">
+                <div class="container">
+                    <h2 class="section-title">Powerful, simple video editing</h2>
+                    <p class="section-subtitle">Trim, preview and export — all in your browser. No uploads required for the demo.</p>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <h3>Trim & Cut</h3>
+                            <p>Quickly set in/out points and preview the trimmed clip.</p>
                         </div>
-
-                        <div class="form-group">
-                            <label for="package">Package *</label>
-                            <select id="package" name="package" required>
-                                <option value="">Select a package</option>
-                                <option value="adventure">Adventure Seeker - $899</option>
-                                <option value="premium">Premium Explorer - $1,499</option>
-                                <option value="luxury">Luxury Expedition - $2,299</option>
-                            </select>
+                        <div class="feature">
+                            <h3>Fast Preview</h3>
+                            <p>Frame-accurate scrubbing and looped preview of trimmed region.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Export (Demo)</h3>
+                            <p>Export simulated — this demo shows the flow for a static landing page.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="date">Preferred Date *</label>
-                            <input type="date" id="date" name="date" required>
+            <section id="demo" class="section demo-section">
+                <div class="container">
+                    <h2 class="section-title">Try the demo</h2>
+                    <p class="section-subtitle">Upload a video file (mp4, webm) to preview basic editing controls in your browser.</p>
+
+                    <div class="editor-grid">
+                        <div class="editor-left">
+                            <label class="file-input">
+                                <input type="file" id="videoFile" accept="video/*" />
+                                Choose video file
+                            </label>
+
+                            <div class="video-container">
+                                <video id="editorVideo" controls crossorigin="anonymous"></video>
+                                <div class="video-info">
+                                    <span id="currentTime">0:00</span>
+                                    <input id="seek" type="range" min="0" max="100" value="0" step="0.01" />
+                                    <span id="duration">0:00</span>
+                                </div>
+                            </div>
+
+                            <div class="controls">
+                                <button id="playPause" class="btn btn-primary">Play</button>
+                                <label>Start
+                                    <input id="trimStart" type="number" min="0" value="0" step="0.1" />
+                                </label>
+                                <label>End
+                                    <input id="trimEnd" type="number" min="0" value="0" step="0.1" />
+                                </label>
+                                <label class="loop-toggle"><input id="loopToggle" type="checkbox" /> Loop</label>
+                                <button id="exportBtn" class="btn btn-secondary">Export (demo)</button>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="travelers">Number of Travelers *</label>
-                            <input type="number" id="travelers" name="travelers" min="1" max="20" value="1" required>
+                        <aside class="editor-right">
+                            <div class="card info-card">
+                                <h4>Tips</h4>
+                                <ul>
+                                    <li>Use the scrubber for fine-grain seeking.</li>
+                                    <li>Set start/end then click Play to preview the trimmed region.</li>
+                                    <li>Export button is a mock for this demo — real export requires additional tooling.</li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pricing" class="section">
+                <div class="container">
+                    <h2 class="section-title">Pricing</h2>
+                    <p class="section-subtitle">Etitx is a demo — contact for custom integrations and white-label solutions.</p>
+                    <div class="pricing-grid">
+                        <div class="price-card">
+                            <h3>Free Demo</h3>
+                            <p>Basic in-browser demo (no export).</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Pro</h3>
+                            <p>Server-side export, advanced trims, cloud storage integration.</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Enterprise</h3>
+                            <p>Custom workflows, API, branding and support.</p>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="message">Special Requests</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Any special requirements or questions?"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-large">Complete Booking</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>About Us</h4>
-                    <p>Your trusted partner in discovering the beauty of Gilgit-Baltistan. Creating unforgettable travel experiences since 2015.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#packages">Packages</a></li>
-                        <li><a href="#features">Why Us</a></li>
-                        <li><a href="#booking">Book Now</a></li>
-                    </ul>
+            </section>
+
+            <section id="contact" class="section section-dark">
+                <div class="container">
+                    <h2 class="section-title">Get in touch</h2>
+                    <p class="section-subtitle">Have a project? Reach out to learn how Etitx can fit your workflow.</p>
+                    <a class="btn btn-primary" href="mailto:hello@arbabxada.com">hello@arbabxada.com</a>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>📧 info@gilgittours.com</p>
-                    <p>📞 +92 1234 567890</p>
-                    <p>📍 Skardu, Gilgit-Baltistan</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Twitter</a>
-                    </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>© 2026 ArbabXada Etitx</div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Gilgit-Baltistan Tours. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="app.js"></script>
-</body>
+        <script src="app.js"></script>
+    </body>
 </html>
