@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="ArbabXada Etitx — a lightweight, fast video editor landing page demo" />
+        <title>ArbabXada Etitx — Video Editor</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <nav id="navbar" class="navbar">
+            <div class="navbar-container container">
+                <div class="logo">ArbabXada <span class="brand-accent">Etitx</span></div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#demo">Demo</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a class="btn btn-primary" href="#demo">Try Demo</a>
+            </div>
+        </nav>
+
+        <header id="home" class="hero hero-small">
+            <div class="container hero-inner">
+                <div class="hero-left">
+                    <h1 class="hero-title">Edit faster. Create bolder.</h1>
+                    <p class="hero-subtitle">ArbabXada Etitx — a lightweight web video editor demo for quick trims, previews, and exports.</p>
+                    <div class="hero-ctas">
+                        <a class="btn btn-primary" href="#demo">Try Demo</a>
+                        <a class="btn btn-secondary" href="#features">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="card demo-preview">
+                        <div class="demo-badge">Live Demo</div>
+                        <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?w=800&h=450&fit=crop" alt="video preview" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="features" class="section">
+                <div class="container">
+                    <h2 class="section-title">Powerful, simple video editing</h2>
+                    <p class="section-subtitle">Trim, preview and export — all in your browser. No uploads required for the demo.</p>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <h3>Trim & Cut</h3>
+                            <p>Quickly set in/out points and preview the trimmed clip.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Fast Preview</h3>
+                            <p>Frame-accurate scrubbing and looped preview of trimmed region.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Export (Demo)</h3>
+                            <p>Export simulated — this demo shows the flow for a static landing page.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="demo" class="section demo-section">
+                <div class="container">
+                    <h2 class="section-title">Try the demo</h2>
+                    <p class="section-subtitle">Upload a video file (mp4, webm) to preview basic editing controls in your browser.</p>
+
+                    <div class="editor-grid">
+                        <div class="editor-left">
+                            <label class="file-input">
+                                <input type="file" id="videoFile" accept="video/*" />
+                                Choose video file
+                            </label>
+
+                            <div class="video-container">
+                                <video id="editorVideo" controls crossorigin="anonymous"></video>
+                                <div class="video-info">
+                                    <span id="currentTime">0:00</span>
+                                    <input id="seek" type="range" min="0" max="100" value="0" step="0.01" />
+                                    <span id="duration">0:00</span>
+                                </div>
+                            </div>
+
+                            <div class="controls">
+                                <button id="playPause" class="btn btn-primary">Play</button>
+                                <label>Start
+                                    <input id="trimStart" type="number" min="0" value="0" step="0.1" />
+                                </label>
+                                <label>End
+                                    <input id="trimEnd" type="number" min="0" value="0" step="0.1" />
+                                </label>
+                                <label class="loop-toggle"><input id="loopToggle" type="checkbox" /> Loop</label>
+                                <button id="exportBtn" class="btn btn-secondary">Export (demo)</button>
+                            </div>
+                        </div>
+
+                        <aside class="editor-right">
+                            <div class="card info-card">
+                                <h4>Tips</h4>
+                                <ul>
+                                    <li>Use the scrubber for fine-grain seeking.</li>
+                                    <li>Set start/end then click Play to preview the trimmed region.</li>
+                                    <li>Export button is a mock for this demo — real export requires additional tooling.</li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pricing" class="section">
+                <div class="container">
+                    <h2 class="section-title">Pricing</h2>
+                    <p class="section-subtitle">Etitx is a demo — contact for custom integrations and white-label solutions.</p>
+                    <div class="pricing-grid">
+                        <div class="price-card">
+                            <h3>Free Demo</h3>
+                            <p>Basic in-browser demo (no export).</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Pro</h3>
+                            <p>Server-side export, advanced trims, cloud storage integration.</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Enterprise</h3>
+                            <p>Custom workflows, API, branding and support.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section section-dark">
+                <div class="container">
+                    <h2 class="section-title">Get in touch</h2>
+                    <p class="section-subtitle">Have a project? Reach out to learn how Etitx can fit your workflow.</p>
+                    <a class="btn btn-primary" href="mailto:hello@arbabxada.com">hello@arbabxada.com</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>© 2026 ArbabXada Etitx</div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
